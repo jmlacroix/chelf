@@ -1,6 +1,6 @@
 Chelf is a SIMBL plugin that adds a keyboard shortcut to close the "download shelf" of Google Chrome.
 
-Chelf adds an entry in the "Window" menu of Chrome, binded to ⌘⇧X (command-shift-X).
+Chelf adds an entry in the "Window" menu of Chrome, bound to ⌘⇧X (command-shift-X).
 
 ## Installation ##
 
