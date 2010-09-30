@@ -52,7 +52,7 @@
     [item setAction:@selector(closeShelf:)];
 
     int index = [menu indexOfItemWithTarget:nil andAction:@selector(performMinimize:)];
-    [menu insertItem:item atIndex:index + 8];
+    [menu insertItem:item atIndex:index + 9];
 }
 
 - (void)closeShelf:sender
