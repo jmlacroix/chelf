@@ -1,6 +1,6 @@
 //
 //  Chelf.h
-//  Bobby
+//  Chelf
 //
 //  Created by Jean-Michel Lacroix (jmlacroix.com) on 10-08-04.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.

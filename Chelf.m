@@ -1,6 +1,6 @@
 //
 //  Chelf.m
-//  Bobby
+//  Chelf
 //
 //  Created by Jean-Michel Lacroix (jmlacroix.com) on 10-08-04.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
@@ -16,16 +16,16 @@
 
 + (Chelf*)sharedInstance {
     static Chelf* chelf = nil;
-    
+
     if (chelf == nil)
         chelf = [[Chelf alloc] init];
-    
+
     return chelf;
 }
 
 + (void)load {
     [[Chelf sharedInstance] insertMenu];
-    [NSClassFromString(@"DownloadShelfController") 
+    [NSClassFromString(@"DownloadShelfController")
         jr_swizzleMethod:@selector(showDownloadShelf:)
               withMethod:@selector(Shelf_showDownloadShelf:) error:NULL];
 }
@@ -66,10 +66,10 @@
 @implementation NSViewController(Chelf)
 
 - (void)Shelf_showDownloadShelf:(BOOL)enable {
-    
+
     Chelf *chelf = [Chelf sharedInstance];
     chelf.downloadShelf = self;
-    
+
     [self Shelf_showDownloadShelf:enable];
 }
 
